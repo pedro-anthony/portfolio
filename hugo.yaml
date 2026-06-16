@@ -1,0 +1,4 @@
+baseURL: https://pedrobuilds.tech/
+locale: pt-BR
+title: pedrobuilds.tech
+theme: ["PaperMod"]
