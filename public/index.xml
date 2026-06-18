@@ -6,14 +6,14 @@
     <description>Recent content on pedrobuilds.tech</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 16 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jun 2026 22:14:19 -0300</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>IA não sabe fazer matemática</title>
-      <link>http://localhost:1313/posts/ia-nao-sabe-fazer-matematica/</link>
-      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/ia-nao-sabe-fazer-matematica/</guid>
-      <description>Text.</description>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Wed, 17 Jun 2026 22:14:19 -0300</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>Desc Text.</description>
     </item>
   </channel>
 </rss>

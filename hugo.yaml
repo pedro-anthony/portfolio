@@ -41,24 +41,18 @@ params:
 
   assets:
     # disableHLJS: true # to disable highlight.js
-    # disableFingerprinting: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+    disableFingerprinting: true
 
   label:
-    text: "home"
-    icon: /apple-touch-icon.png
+    text: "pedro builds tech"
+    icon: /img/home.png
     iconHeight: 35
 
-  # profile-mode
   profileMode:
     enabled: true # needs to be explicitly set
     title: pedrobuilds.tech
     subtitle: "minha casa na internet."
-    imageUrl: /img/nina.jpg
+    imageUrl: /img/pedro.png
     imageWidth: 250
     imageHeight: 250
     imageTitle: nina
@@ -81,6 +75,10 @@ menu:
       name: posts
       url: posts
       weight: 20
+    - identifier: about
+      name: "sobre mim"
+      url: about
+      weight: 30
 
 pygmentsUseClasses: true
 markup:
