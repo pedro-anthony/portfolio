@@ -1,4 +1,93 @@
-baseURL: https://pedrobuilds.tech/
-locale: pt-BR
+baseURL: "https://pedrobuilds.tech/"
 title: pedrobuilds.tech
-theme: ["PaperMod"]
+paginate: 5
+theme: PaperMod
+contentDir: "./content/"
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production 
+  title: pedrobuilds.tech
+  description: "minha casa na internet."
+  keywords: [Blog, Portfolio, PaperMod]
+  author: ["Pedro Antonio"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "<link / abs url>"
+    favicon16x16: "<link / abs url>"
+    favicon32x32: "<link / abs url>"
+    apple_touch_icon: "<link / abs url>"
+    safari_pinned_tab: "<link / abs url>"
+
+  label:
+    text: "home"
+    icon: /apple-touch-icon.png
+    iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: true # needs to be explicitly set
+    title: pedrobuilds.tech
+    subtitle: "minha casa na internet."
+    imageUrl: /img/nina.jpg
+    imageWidth: 250
+    imageHeight: 250
+    imageTitle: nina
+    buttons:
+      - name: Posts
+        url: posts
+ 
+  socialIcons:
+    - name: github
+      url: "https://github.com/pedro-anthony"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+menu:
+  main:
+    - identifier: posts
+      name: posts
+      url: posts
+      weight: 20
+
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
