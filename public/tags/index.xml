@@ -2,18 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on pedrobuilds.tech</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://pedrobuilds.tech/tags/</link>
     <description>Recent content in Tags on pedrobuilds.tech</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 17 Jun 2026 22:14:19 -0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Blog</title>
-      <link>http://localhost:1313/tags/blog/</link>
-      <pubDate>Wed, 17 Jun 2026 22:14:19 -0300</pubDate>
-      <guid>http://localhost:1313/tags/blog/</guid>
-      <description></description>
-    </item>
+    <atom:link href="https://pedrobuilds.tech/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

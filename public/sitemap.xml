@@ -2,16 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/about/</loc>
-    <lastmod>2026-06-17T22:14:19-03:00</lastmod>
+    <loc>https://pedrobuilds.tech/about/</loc>
+    <lastmod>2026-06-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2026-06-17T22:14:19-03:00</lastmod>
+    <loc>https://pedrobuilds.tech/</loc>
+    <lastmod>2026-06-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/blog/</loc>
+    <loc>https://pedrobuilds.tech/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://pedrobuilds.tech/tags/</loc>
   </url>
 </urlset>
