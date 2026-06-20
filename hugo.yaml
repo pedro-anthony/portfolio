@@ -57,8 +57,10 @@ params:
     imageHeight: 250
     imageTitle: nina
     buttons:
-      - name: Posts
+      - name: posts
         url: posts
+      - name: "sobre mim"
+        url: about
  
   socialIcons:
     - name: github

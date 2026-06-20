@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>pedrobuilds.tech</title>
-    <link>https://pedrobuilds.tech/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on pedrobuilds.tech</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 17 Jun 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://pedrobuilds.tech/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>about.md</title>
-      <link>https://pedrobuilds.tech/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://pedrobuilds.tech/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description>o que é esse site? um pouco sobre mim</description>
     </item>
   </channel>
