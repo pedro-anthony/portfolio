@@ -20,9 +20,9 @@ UseHugoToc: true
 ---
 olá! eu sou o pedro 👋
 
-sou um profissional de ti e desenvolvedor. minha jornada na tecnologia começou da forma mais clássica e empolgante possível: escovando bits e fuçando em códigos para criar mods e jogos lá em meados de 2016.
+sou um profissional de ti e desenvolvedor. meu interesse na tecnologia começou da forma empolgante possível: fuçando em códigos para criar mods e jogos lá em 2016.
 
-criei o pedrobuilds.tech para ser muito mais do que um simples portfólio. ele é o meu laboratório aberto, documento meus projetos, escrevo artigos compartilhando minhas perspectivas sobre as tendências e os rumos do universo da tecnologia.
+criei o pedrobuilds.tech para ser o meu laboratório aberto, documento meus projetos, escrevo artigos compartilhando minhas perspectivas sobre as tendências e os rumos do universo da tecnologia.
 
 # 💻 o que eu ando construindo e estudando
 
