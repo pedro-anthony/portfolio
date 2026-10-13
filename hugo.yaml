@@ -1,5 +1,5 @@
-baseURL: "https://pedrobuilds.tech/"
-title: pedrobuilds.tech
+baseURL: "https://blog.pedrobuilds.tech/"
+title: blog.pedrobuilds.tech
 paginate: 5
 theme: PaperMod
 contentDir: "./content/"
