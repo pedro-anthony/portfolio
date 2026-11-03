@@ -1,0 +1,4 @@
+/* home icon is white; make it black in light mode */
+[data-theme="light"] .logo img {
+    filter: invert(1);
+}
