@@ -18,46 +18,45 @@ ShowWordCount: true
 ShowRssButtonInSectionTermList: false
 UseHugoToc: true
 ---
-olá! eu sou o pedro 👋
 
-sou um profissional de ti e desenvolvedor. meu interesse na tecnologia começou da forma empolgante possível: fuçando em códigos para criar mods e jogos lá em 2016.
+Oi, eu sou o Pedro.
 
-criei o pedrobuilds.tech para ser o meu laboratório aberto, documento meus projetos, escrevo artigos compartilhando minhas perspectivas sobre as tendências e os rumos do universo da tecnologia.
+Trabalho com TI e programo. Comecei em 2016, fuçando no código de jogos pra fazer mods, e desde então não parei de abrir as coisas pra ver como funcionam por dentro.
 
-# 💻 o que eu ando construindo e estudando
+Esse blog é onde eu documento meus projetos e escrevo sobre o que ando estudando ou o que me chamou atenção no mundo da tecnologia. Os posts dão uma boa ideia do tipo de coisa que aparece por aqui: a engenharia reversa do [protocolo RGB de um teclado](/posts/redragon-fizz/), a análise de um [malware escondido num modpack de Minecraft](/posts/malware-minecraft/) e um texto sobre [como os exclusivos de console estão chegando no PC](/posts/recompilar-jogos/).
 
-- *inteligência artificial & python*: escrevo intensamente em python, utilizando jupyter notebooks para a curadoria e criação de datasets complexos. minha imersão atual envolve o fine-tuning de large language models (llms), a implementação de arquiteturas rag (retrieval-augmented generation) para injetar contexto em sistemas de ia, e a experimentação contínua com diversos modelos generativos baseados na arquitetura transformer.
+## No que eu ando mexendo
 
-- *baixo nível com rust e c*: no mundo de linguagens compiladas, foco em desenvolver e manter drivers para dispositivos obscuros, aplicações críticas para ambientes linux, além de ser mantedor principal de todo o meu ambiente de desktop (compositor, WM, launcher e taskbar autorais)
+**IA e Python.** Escrevo bastante Python, geralmente em Jupyter notebooks, montando e tratando datasets. Ultimamente tenho feito fine-tuning de LLMs, montado pipelines de RAG (que buscam informação externa e passam pro modelo como contexto na hora de responder) e testado vários modelos baseados em transformers.
 
-- *segurança e self-hosting*: exijo controle total sobre os sistemas que opero. realizo a auto hospedagem de todos os aplicativos possíveis do meu cotidiano em um homelab que eu mesmo montei. garanto a segurança e a integridade do meu servidor com práticas rigorosas de hardening, seguindo estritamente os padrões de compliance do CIS benchmark (l2) entre outros..
+**Rust e C.** No baixo nível, escrevo e mantenho drivers pra dispositivos obscuros que ninguém se deu ao trabalho de suportar no Linux, além de outras ferramentas pro sistema. Também uso um ambiente de desktop feito por mim, com compositor, gerenciador de janelas, launcher e barra de tarefas próprios.
 
-- *fundamentos e edge AI*: não apenas consumo apis prontas, estou construindo uma base teórica robusta em matemática e algoritmos fundamentais para machine learning. exploro a aplicação de IA em sistemas embarcados e o desafio de auto hospedar modelos menores e ágeis para rodar localmente com privacidade e controle total.
+**Self-hosting e segurança.** Gosto de ter controle sobre o que eu uso, então hospedo tudo o que dá num homelab que eu mesmo montei. O servidor segue o CIS Benchmark nível 2, entre outras práticas de hardening.
 
-# 🛠️ stack & ferramentas
+**Base teórica e IA local.** Não quero ficar só chamando API pronta, então estou estudando a matemática e os algoritmos por trás de machine learning. Também tenho testado modelos menores rodando localmente e em sistemas embarcados, sem depender de serviço de terceiros.
+
+## Stack
+
 | categoria | tecnologias |
 | :--- | :--- |
-| linguagens | python, rust, c |
-| cloud, deploy & infra | docker, github actions (ci/cd), nginx, cloudflare, oracle cloud, aws, hostinger |
-| áreas de foco principal | machine learning, mlops, automação, devops, segurança, sistemas embarcados |
+| linguagens | Python, Rust, C |
+| cloud, deploy e infra | Docker, GitHub Actions (CI/CD), nginx, Cloudflare, Oracle Cloud, AWS, Hostinger |
+| áreas de interesse | machine learning, MLOps, automação, DevOps, segurança, sistemas embarcados |
 
-# 🚀 experiência profissional
+## Experiência
 
 ![fachada do escritório da IRED internet em Maringá, PR](/img/ired.png)
-*analista de suporte | IRED internet*
-- atuei no SAC do provedor, focado na resolução de problemas reportados por clientes b2b e b2c.
-- realizava diagnósticos profundos de roteamento de redes e avaliava a qualidade de entrega de pacotes (qos), identificando gargalos lógicos ou físicos que impactavam a conectividade.
-- minha abordagem era altamente técnica e personalizada: o objetivo era investigar a causa raiz de cada anomalia para garantir a resolução definitiva, mitigando falhas e reduzindo a zero os índices de retorno de chamados.
+**Analista de suporte | IRED Internet**
+
+Trabalhei no SAC do provedor atendendo clientes residenciais e empresariais. Boa parte do trabalho era diagnosticar problemas de roteamento e de qualidade na entrega de pacotes (QoS), descobrir se o gargalo era físico ou de configuração e resolver de vez, pra o cliente não ter que ligar de novo.
 
 ![fachada do escritório da ANP em Maringá, PR](/img/anp.png)
-*helpdesk, infraestrutura & sysadmin | ANP da IASD*
-- auxiliei a manter e otimizar toda a operação de TI do escritório regional, garantindo a continuidade dos fluxos de trabalho da equipe.
-- gerenciei o ciclo de vida completo do hardware (provisionamento, manutenção e descarte) e administrei o inventário de ti da instituição.
-- atuei na monitoria ativa da saúde da rede corporativa e prestei suporte contínuo aos serviços e servidores.
-- responsável pela manutenção de serviços vitais hospedados on-premise, assegurando a disponibilidade de servidores de e soluções de nuvem privada
+**Helpdesk, infraestrutura e sysadmin | ANP da IASD**
 
-# 🎯 o futuro
+Ajudei a manter a TI do escritório regional funcionando. Cuidava do hardware do começo ao fim (provisionamento, manutenção e descarte) e do inventário, monitorava a rede, dava suporte pra equipe e mantinha no ar os servidores locais e a nuvem privada do escritório.
 
-meu objetivo é a transição para uma carreira focada em desenvolvimento e manutenção de sistemas e suas integrações com a inteligência artificial.
+## Daqui pra frente
 
-se você curte trocar ideias sobre os últimos papers de llms, estratégias de automação, homelabs ou desafios complexos de infraestrutura, sinta-se à vontade para entrar em contato e trocar idéia!
+Quero migrar pra uma carreira em desenvolvimento, construindo e mantendo sistemas e integrando IA neles.
+
+Se quiser trocar ideia sobre LLMs, automação, homelab ou infraestrutura, me chama no [LinkedIn](https://www.linkedin.com/in/pedroamborges/) ou no email que está na página inicial.
