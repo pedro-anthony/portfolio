@@ -2,6 +2,12 @@
 date: '2026-10-06T12:19:42-03:00'
 draft: false
 title: 'Implementando o protocolo de um teclado no OpenRGB baseado em capturas de pacotes USB'
+description: 'Engenharia reversa do protocolo RGB do teclado Redragon Fizz K617 a partir de capturas USB, para controlá-lo pelo OpenRGB no Linux.'
+tags: ['linux', 'engenharia reversa', 'openrgb', 'usb']
+cover:
+  image: 'cover.jpg'
+  relative: true
+  alt: 'Ilustração de um teclado enviando pacotes USB que viram cores RGB no OpenRGB'
 ---
 
 Se tem uma coisa que eu não gosto é software exclusivo. Sendo um usuário de Linux, depender de um programa de código fechado de algum vendor, seja pra controlar um hardware, seja um programa usado a fim de trabalho, é sempre o pior caso.

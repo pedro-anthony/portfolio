@@ -1,0 +1,153 @@
+<div class="profile">
+    {{- with site.Params.profileMode }}
+    <div class="profile_inner">
+        {{- if .imageUrl -}}
+        {{- $img := "" }}
+        {{- if not (urls.Parse .imageUrl).IsAbs }}
+            {{- $img = resources.Get .imageUrl }}
+        {{- end }}
+        {{- if $img }}
+            {{- $processableFormats := (slice "jpg" "jpeg" "png" "tif" "bmp" "gif") -}}
+            {{- if hugo.IsExtended -}}
+                {{- $processableFormats = $processableFormats | append "webp" -}}
+            {{- end -}}
+            {{- $prod := (hugo.IsProduction | or (eq site.Params.env "production")) }}
+            {{- if and (in $processableFormats $img.MediaType.SubType) (eq $prod true)}}
+                {{- if (not (and (not .imageHeight) (not .imageWidth))) }}
+                    {{- $img = $img.Resize (printf "%dx%d" .imageWidth .imageHeight) }}
+                {{- else if .imageHeight }}
+                    {{- $img = $img.Resize (printf "x%d" .imageHeight) }}
+                {{ else if .imageWidth }}
+                    {{- $img = $img.Resize (printf "%dx" .imageWidth) }}
+                {{ else }}
+                    {{- $img = $img.Resize "150x150" }}
+                {{- end }}
+            {{- end }}
+            <img draggable="false" src="{{ $img.Permalink }}" alt="{{ .imageTitle | default "profile image" }}" title="{{ .imageTitle }}"
+                height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
+        {{- else }}
+        <img draggable="false" src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default "profile image" }}" title="{{ .imageTitle }}"
+            height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
+        {{- end }}
+        {{- end }}
+        <h1>{{ .title | default site.Title | markdownify }}</h1>
+        <span>{{ .subtitle | markdownify }}</span>
+        {{- partial "social_icons.html" -}}
+
+        {{- with site.Params.email }}
+        {{- $parts := split . "@" }}
+        {{- $user := index $parts 0 }}
+        {{- $domain := index $parts 1 }}
+        <button type="button" class="copy-email" data-user="{{ $user }}" data-domain="{{ $domain }}" title="copiar e-mail">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+            </svg>
+            <span>{{ $user }} [em] {{ replace $domain "." " (ponto) " }}</span>
+        </button>
+        <div class="copy-toast" role="status" aria-live="polite" hidden></div>
+        <script>
+        (function () {
+            var btn = document.querySelector(".copy-email");
+            var toast = document.querySelector(".copy-toast");
+            if (!btn || !toast) return;
+            var timer;
+
+            function fallbackCopy(text) {
+                var ta = document.createElement("textarea");
+                ta.value = text;
+                ta.setAttribute("readonly", "");
+                ta.style.position = "fixed";
+                ta.style.opacity = "0";
+                document.body.appendChild(ta);
+                ta.select();
+                var ok = false;
+                try { ok = document.execCommand("copy"); } catch (e) {}
+                document.body.removeChild(ta);
+                return ok ? Promise.resolve() : Promise.reject();
+            }
+
+            function show(msg, x, y) {
+                toast.textContent = msg;
+                toast.hidden = false;
+                toast.classList.remove("visible");
+                var w = toast.offsetWidth;
+                var left = Math.min(Math.max(x - w / 2, 8), window.innerWidth - w - 8);
+                toast.style.left = left + "px";
+                toast.style.top = (y - toast.offsetHeight - 14) + "px";
+                requestAnimationFrame(function () { toast.classList.add("visible"); });
+                clearTimeout(timer);
+                timer = setTimeout(function () {
+                    toast.classList.remove("visible");
+                    setTimeout(function () { toast.hidden = true; }, 200);
+                }, 2000);
+            }
+
+            btn.addEventListener("click", function (ev) {
+                var email = btn.dataset.user + "@" + btn.dataset.domain;
+                var r = btn.getBoundingClientRect();
+                // clique de teclado (Enter/Espaço) não tem coordenadas: usa o centro do botão
+                var x = ev.clientX || (r.left + r.width / 2);
+                var y = ev.clientY || r.top;
+                var copy = (navigator.clipboard && window.isSecureContext)
+                    ? navigator.clipboard.writeText(email)
+                    : fallbackCopy(email);
+                copy.then(function () {
+                    show("e-mail copiado para a sua área de transferência!", x, y);
+                }, function () {
+                    show("não deu para copiar: " + email, x, y);
+                });
+            });
+        })();
+        </script>
+        {{- end }}
+
+        {{- with .buttons }}
+        <div class="buttons">
+            {{- range . }}
+            <a class="button" href="{{ trim .url " " }}" rel="noopener" title="{{ .name }}">
+                <span class="button-inner">
+                    {{ .name }}
+                    {{- if (findRE "://" .url) }}&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="14" width="14">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                    {{- end }}
+                </span>
+            </a>
+            {{- end }}
+        </div>
+        {{- end }}
+    </div>
+    {{- end}}
+</div>
+
+{{- /* Posts recentes abaixo do perfil (adição local ao tema) */}}
+{{- $recent := where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{- $recent = where $recent "Params.hiddenInHomeList" "!=" "true" }}
+{{- with first 3 $recent }}
+<section class="recent-posts" aria-labelledby="recent-posts-title">
+  <div class="recent-posts-header">
+    <h2 id="recent-posts-title">posts recentes</h2>
+    <a href="{{ "posts/" | relLangURL }}">ver todos →</a>
+  </div>
+  {{- range . }}
+  <article class="post-entry">
+    {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
+    {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">{{ .Title }}</h2>
+    </header>
+    <div class="entry-content">
+      <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+    </div>
+    <footer class="entry-footer">{{- partial "post_meta.html" . -}}</footer>
+    <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+  </article>
+  {{- end }}
+</section>
+{{- end }}

@@ -6,15 +6,21 @@
     <description>Recent content on blog.pedrobuilds.tech</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 06 Oct 2026 12:19:42 -0300</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 18:00:46 -0300</lastBuildDate>
     <atom:link href="https://blog.pedrobuilds.tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Decomps, recomps ou camadas de compatibilidade: o que tem por trás dessa onda de jogos exclusivos rodando no PC?</title>
+      <link>https://blog.pedrobuilds.tech/posts/recompilar-jogos/</link>
+      <pubDate>Thu, 12 Nov 2026 18:00:46 -0300</pubDate>
+      <guid>https://blog.pedrobuilds.tech/posts/recompilar-jogos/</guid>
+      <description>Como emuladores, recomps, decomps e camadas de compatibilidade estão levando exclusivos de console para o PC, e o papel da IA nisso.</description>
+    </item>
     <item>
       <title>Implementando o protocolo de um teclado no OpenRGB baseado em capturas de pacotes USB</title>
       <link>https://blog.pedrobuilds.tech/posts/redragon-fizz/</link>
       <pubDate>Tue, 06 Oct 2026 12:19:42 -0300</pubDate>
       <guid>https://blog.pedrobuilds.tech/posts/redragon-fizz/</guid>
-      <description>&lt;p&gt;Se tem uma coisa que eu não gosto é software exclusivo. Sendo um usuário de Linux, depender de um programa de código fechado de algum vendor, seja pra controlar um hardware, seja um programa usado a fim de trabalho, é sempre o pior caso.&lt;/p&gt;
-&lt;p&gt;Tendo isso em mente, eu sou usuário de produtos Redragon já faz alguns anos. Teclado, mouse, já usei headsets também. São produtos com bom custo-benefício, baratos o suficiente pra eu não me incomodar com problemas de QA ou então com o software cagado deles.&lt;/p&gt;</description>
+      <description>Engenharia reversa do protocolo RGB do teclado Redragon Fizz K617 a partir de capturas USB, para controlá-lo pelo OpenRGB no Linux.</description>
     </item>
     <item>
       <title>about.md</title>

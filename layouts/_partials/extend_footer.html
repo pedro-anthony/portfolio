@@ -1,0 +1,36 @@
+{{- /* Gato pontilhado no canto inferior esquerdo: clicar toca um miau aleatório.
+       Todos os .mp3 em static/audio/ entram na lista automaticamente. */ -}}
+{{- $sons := slice }}
+{{- range os.ReadDir "static/audio" }}
+  {{- if and (not .IsDir) (strings.HasSuffix .Name ".mp3") }}
+    {{- $sons = $sons | append (printf "audio/%s" .Name | relURL) }}
+  {{- end }}
+{{- end }}
+{{- with $sons }}
+<button type="button" class="cat-bg" aria-label="gato: clique para ouvir um miau" title="miau?"></button>
+<script>
+(function () {
+    var cat = document.querySelector(".cat-bg");
+    if (!cat) return;
+    var sons = {{ . | jsonify | safeJS }};
+    var cache = {};
+    var ultimo = -1;
+
+    cat.addEventListener("click", function () {
+        // sorteia um miau diferente do último
+        var i = Math.floor(Math.random() * sons.length);
+        if (sons.length > 1 && i === ultimo) i = (i + 1) % sons.length;
+        ultimo = i;
+
+        var audio = cache[i] || (cache[i] = new Audio(sons[i]));
+        audio.volume = 0.6;
+        audio.currentTime = 0;
+        audio.play().catch(function () {});
+
+        cat.classList.remove("meow");
+        void cat.offsetWidth; // reinicia a animação
+        cat.classList.add("meow");
+    });
+})();
+</script>
+{{- end }}

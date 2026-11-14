@@ -1,0 +1,9 @@
+{{- /* Insere um SVG do page bundle direto no HTML, para herdar as cores do tema. Uso: {{< svg src="arquivo.svg" caption="..." >}} */ -}}
+{{- with .Page.Resources.Get (.Get "src") -}}
+<figure class="align-center svg-figure">
+  {{ .Content | safeHTML }}
+  {{- with $.Get "caption" }}<figcaption><p>{{ . | markdownify }}</p></figcaption>{{ end }}
+</figure>
+{{- else -}}
+{{- errorf "svg: arquivo %q não encontrado em %s" (.Get "src") .Position -}}
+{{- end -}}
