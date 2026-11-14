@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Segurança on blog.pedrobuilds.tech</title>
-    <link>http://localhost:1313/tags/seguran%C3%A7a/</link>
+    <link>https://blog.pedrobuilds.tech/tags/seguran%C3%A7a/</link>
     <description>Recent content in Segurança on blog.pedrobuilds.tech</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 14 Nov 2026 09:00:00 -0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/seguran%C3%A7a/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.pedrobuilds.tech/tags/seguran%C3%A7a/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Um modpack de Minecraft com um RAT escondido: como fiz a engenharia reversa de um malware</title>
-      <link>http://localhost:1313/posts/malware-minecraft/</link>
+      <link>https://blog.pedrobuilds.tech/posts/malware-minecraft/</link>
       <pubDate>Sat, 14 Nov 2026 09:00:00 -0300</pubDate>
-      <guid>http://localhost:1313/posts/malware-minecraft/</guid>
+      <guid>https://blog.pedrobuilds.tech/posts/malware-minecraft/</guid>
       <description>Análise estática do modpack WholSphere: do mod falso com 22 MB de zeros (kkkk) até um RAT em Java com HVNC, keylogger e painel de C2 na AWS.</description>
     </item>
   </channel>

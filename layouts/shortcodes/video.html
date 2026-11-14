@@ -1,0 +1,9 @@
+{{- /* Vídeo do page bundle com legenda opcional. Uso: {{< video src="arquivo.mp4" caption="..." >}} */ -}}
+{{- with .Page.Resources.Get (.Get "src") -}}
+<figure class="align-center video-figure">
+  <video controls playsinline preload="metadata" src="{{ .RelPermalink }}"></video>
+  {{- with $.Get "caption" }}<figcaption><p>{{ . | markdownify }}</p></figcaption>{{ end }}
+</figure>
+{{- else -}}
+{{- errorf "video: arquivo %q não encontrado em %s" (.Get "src") .Position -}}
+{{- end -}}

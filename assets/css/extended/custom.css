@@ -149,8 +149,21 @@ body {
     box-shadow: 0 4px 20px rgba(32, 32, 46, 0.12);
 }
 
-[data-theme="dark"] .md-content img {
+[data-theme="dark"] .md-content img,
+[data-theme="dark"] .md-content video {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+}
+
+.md-content figure.video-figure {
+    margin: 1.5rem 0 2rem;
+}
+
+.md-content video {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(32, 32, 46, 0.12);
 }
 
 /* imagem sozinha num parágrafo (o padrão do markdown) fica centralizada */

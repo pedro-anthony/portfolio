@@ -2,57 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://blog.pedrobuilds.tech/</loc>
     <lastmod>2026-11-14T09:00:00-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/engenharia-reversa/</loc>
+    <loc>https://blog.pedrobuilds.tech/tags/engenharia-reversa/</loc>
     <lastmod>2026-11-14T09:00:00-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/malware/</loc>
+    <loc>https://blog.pedrobuilds.tech/tags/malware/</loc>
     <lastmod>2026-11-14T09:00:00-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/minecraft/</loc>
+    <loc>https://blog.pedrobuilds.tech/tags/minecraft/</loc>
     <lastmod>2026-11-14T09:00:00-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://blog.pedrobuilds.tech/posts/</loc>
     <lastmod>2026-11-14T09:00:00-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/seguran%C3%A7a/</loc>
+    <loc>https://blog.pedrobuilds.tech/tags/seguran%C3%A7a/</loc>
     <lastmod>2026-11-14T09:00:00-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://blog.pedrobuilds.tech/tags/</loc>
     <lastmod>2026-11-14T09:00:00-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/malware-minecraft/</loc>
+    <loc>https://blog.pedrobuilds.tech/posts/malware-minecraft/</loc>
     <lastmod>2026-11-14T09:00:00-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/recompilar-jogos/</loc>
+    <loc>https://blog.pedrobuilds.tech/posts/recompilar-jogos/</loc>
     <lastmod>2026-11-12T18:00:46-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/emula%C3%A7%C3%A3o/</loc>
+    <loc>https://blog.pedrobuilds.tech/tags/emula%C3%A7%C3%A3o/</loc>
     <lastmod>2026-11-12T18:00:46-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/games/</loc>
+    <loc>https://blog.pedrobuilds.tech/tags/games/</loc>
     <lastmod>2026-11-12T18:00:46-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ia/</loc>
+    <loc>https://blog.pedrobuilds.tech/tags/ia/</loc>
     <lastmod>2026-11-12T18:00:46-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/redragon-fizz/</loc>
+    <loc>https://blog.pedrobuilds.tech/posts/redragon-fizz/</loc>
     <lastmod>2026-10-06T12:19:42-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/linux/</loc>
+    <loc>https://blog.pedrobuilds.tech/tags/linux/</loc>
     <lastmod>2026-10-06T12:19:42-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/openrgb/</loc>
+    <loc>https://blog.pedrobuilds.tech/tags/openrgb/</loc>
     <lastmod>2026-10-06T12:19:42-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/usb/</loc>
+    <loc>https://blog.pedrobuilds.tech/tags/usb/</loc>
     <lastmod>2026-10-06T12:19:42-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://blog.pedrobuilds.tech/about/</loc>
     <lastmod>2026-06-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://blog.pedrobuilds.tech/categories/</loc>
   </url>
 </urlset>

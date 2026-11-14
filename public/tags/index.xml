@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on blog.pedrobuilds.tech</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://blog.pedrobuilds.tech/tags/</link>
     <description>Recent content in Tags on blog.pedrobuilds.tech</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 14 Nov 2026 09:00:00 -0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.pedrobuilds.tech/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Engenharia Reversa</title>
-      <link>http://localhost:1313/tags/engenharia-reversa/</link>
+      <link>https://blog.pedrobuilds.tech/tags/engenharia-reversa/</link>
       <pubDate>Sat, 14 Nov 2026 09:00:00 -0300</pubDate>
-      <guid>http://localhost:1313/tags/engenharia-reversa/</guid>
+      <guid>https://blog.pedrobuilds.tech/tags/engenharia-reversa/</guid>
       <description></description>
     </item>
     <item>
       <title>Malware</title>
-      <link>http://localhost:1313/tags/malware/</link>
+      <link>https://blog.pedrobuilds.tech/tags/malware/</link>
       <pubDate>Sat, 14 Nov 2026 09:00:00 -0300</pubDate>
-      <guid>http://localhost:1313/tags/malware/</guid>
+      <guid>https://blog.pedrobuilds.tech/tags/malware/</guid>
       <description></description>
     </item>
     <item>
       <title>Minecraft</title>
-      <link>http://localhost:1313/tags/minecraft/</link>
+      <link>https://blog.pedrobuilds.tech/tags/minecraft/</link>
       <pubDate>Sat, 14 Nov 2026 09:00:00 -0300</pubDate>
-      <guid>http://localhost:1313/tags/minecraft/</guid>
+      <guid>https://blog.pedrobuilds.tech/tags/minecraft/</guid>
       <description></description>
     </item>
     <item>
       <title>Segurança</title>
-      <link>http://localhost:1313/tags/seguran%C3%A7a/</link>
+      <link>https://blog.pedrobuilds.tech/tags/seguran%C3%A7a/</link>
       <pubDate>Sat, 14 Nov 2026 09:00:00 -0300</pubDate>
-      <guid>http://localhost:1313/tags/seguran%C3%A7a/</guid>
+      <guid>https://blog.pedrobuilds.tech/tags/seguran%C3%A7a/</guid>
       <description></description>
     </item>
     <item>
       <title>Emulação</title>
-      <link>http://localhost:1313/tags/emula%C3%A7%C3%A3o/</link>
+      <link>https://blog.pedrobuilds.tech/tags/emula%C3%A7%C3%A3o/</link>
       <pubDate>Thu, 12 Nov 2026 18:00:46 -0300</pubDate>
-      <guid>http://localhost:1313/tags/emula%C3%A7%C3%A3o/</guid>
+      <guid>https://blog.pedrobuilds.tech/tags/emula%C3%A7%C3%A3o/</guid>
       <description></description>
     </item>
     <item>
       <title>Games</title>
-      <link>http://localhost:1313/tags/games/</link>
+      <link>https://blog.pedrobuilds.tech/tags/games/</link>
       <pubDate>Thu, 12 Nov 2026 18:00:46 -0300</pubDate>
-      <guid>http://localhost:1313/tags/games/</guid>
+      <guid>https://blog.pedrobuilds.tech/tags/games/</guid>
       <description></description>
     </item>
     <item>
       <title>IA</title>
-      <link>http://localhost:1313/tags/ia/</link>
+      <link>https://blog.pedrobuilds.tech/tags/ia/</link>
       <pubDate>Thu, 12 Nov 2026 18:00:46 -0300</pubDate>
-      <guid>http://localhost:1313/tags/ia/</guid>
+      <guid>https://blog.pedrobuilds.tech/tags/ia/</guid>
       <description></description>
     </item>
     <item>
       <title>Linux</title>
-      <link>http://localhost:1313/tags/linux/</link>
+      <link>https://blog.pedrobuilds.tech/tags/linux/</link>
       <pubDate>Tue, 06 Oct 2026 12:19:42 -0300</pubDate>
-      <guid>http://localhost:1313/tags/linux/</guid>
+      <guid>https://blog.pedrobuilds.tech/tags/linux/</guid>
       <description></description>
     </item>
     <item>
       <title>Openrgb</title>
-      <link>http://localhost:1313/tags/openrgb/</link>
+      <link>https://blog.pedrobuilds.tech/tags/openrgb/</link>
       <pubDate>Tue, 06 Oct 2026 12:19:42 -0300</pubDate>
-      <guid>http://localhost:1313/tags/openrgb/</guid>
+      <guid>https://blog.pedrobuilds.tech/tags/openrgb/</guid>
       <description></description>
     </item>
     <item>
       <title>Usb</title>
-      <link>http://localhost:1313/tags/usb/</link>
+      <link>https://blog.pedrobuilds.tech/tags/usb/</link>
       <pubDate>Tue, 06 Oct 2026 12:19:42 -0300</pubDate>
-      <guid>http://localhost:1313/tags/usb/</guid>
+      <guid>https://blog.pedrobuilds.tech/tags/usb/</guid>
       <description></description>
     </item>
   </channel>

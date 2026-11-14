@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Engenharia Reversa on blog.pedrobuilds.tech</title>
-    <link>http://localhost:1313/tags/engenharia-reversa/</link>
+    <link>https://blog.pedrobuilds.tech/tags/engenharia-reversa/</link>
     <description>Recent content in Engenharia Reversa on blog.pedrobuilds.tech</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 14 Nov 2026 09:00:00 -0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/engenharia-reversa/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.pedrobuilds.tech/tags/engenharia-reversa/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Um modpack de Minecraft com um RAT escondido: como fiz a engenharia reversa de um malware</title>
-      <link>http://localhost:1313/posts/malware-minecraft/</link>
+      <link>https://blog.pedrobuilds.tech/posts/malware-minecraft/</link>
       <pubDate>Sat, 14 Nov 2026 09:00:00 -0300</pubDate>
-      <guid>http://localhost:1313/posts/malware-minecraft/</guid>
+      <guid>https://blog.pedrobuilds.tech/posts/malware-minecraft/</guid>
       <description>Análise estática do modpack WholSphere: do mod falso com 22 MB de zeros (kkkk) até um RAT em Java com HVNC, keylogger e painel de C2 na AWS.</description>
     </item>
     <item>
       <title>Decomps, recomps ou camadas de compatibilidade: o que tem por trás dessa onda de jogos exclusivos rodando no PC?</title>
-      <link>http://localhost:1313/posts/recompilar-jogos/</link>
+      <link>https://blog.pedrobuilds.tech/posts/recompilar-jogos/</link>
       <pubDate>Thu, 12 Nov 2026 18:00:46 -0300</pubDate>
-      <guid>http://localhost:1313/posts/recompilar-jogos/</guid>
+      <guid>https://blog.pedrobuilds.tech/posts/recompilar-jogos/</guid>
       <description>Como emuladores, recomps, decomps e camadas de compatibilidade estão levando exclusivos de console para o PC, e o papel da IA nisso.</description>
     </item>
     <item>
       <title>Implementando o protocolo de um teclado no OpenRGB baseado em capturas de pacotes USB</title>
-      <link>http://localhost:1313/posts/redragon-fizz/</link>
+      <link>https://blog.pedrobuilds.tech/posts/redragon-fizz/</link>
       <pubDate>Tue, 06 Oct 2026 12:19:42 -0300</pubDate>
-      <guid>http://localhost:1313/posts/redragon-fizz/</guid>
+      <guid>https://blog.pedrobuilds.tech/posts/redragon-fizz/</guid>
       <description>Engenharia reversa do protocolo RGB do teclado Redragon Fizz K617 a partir de capturas USB, para controlá-lo pelo OpenRGB no Linux.</description>
     </item>
   </channel>
