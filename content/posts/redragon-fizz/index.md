@@ -4,6 +4,8 @@ draft: false
 title: 'Implementando o protocolo de um teclado no OpenRGB baseado em capturas de pacotes USB'
 description: 'Engenharia reversa do protocolo RGB do teclado Redragon Fizz K617 a partir de capturas USB, para controlá-lo pelo OpenRGB no Linux.'
 tags: ['linux', 'engenharia reversa', 'openrgb', 'usb']
+showToc: true
+tocOpen: false
 cover:
   image: 'cover.jpg'
   relative: true

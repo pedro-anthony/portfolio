@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>IA on blog.pedrobuilds.tech</title>
-    <link>https://blog.pedrobuilds.tech/tags/ia/</link>
+    <link>http://localhost:1313/tags/ia/</link>
     <description>Recent content in IA on blog.pedrobuilds.tech</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 12 Nov 2026 18:00:46 -0300</lastBuildDate>
-    <atom:link href="https://blog.pedrobuilds.tech/tags/ia/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/ia/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Decomps, recomps ou camadas de compatibilidade: o que tem por trás dessa onda de jogos exclusivos rodando no PC?</title>
-      <link>https://blog.pedrobuilds.tech/posts/recompilar-jogos/</link>
+      <link>http://localhost:1313/posts/recompilar-jogos/</link>
       <pubDate>Thu, 12 Nov 2026 18:00:46 -0300</pubDate>
-      <guid>https://blog.pedrobuilds.tech/posts/recompilar-jogos/</guid>
+      <guid>http://localhost:1313/posts/recompilar-jogos/</guid>
       <description>Como emuladores, recomps, decomps e camadas de compatibilidade estão levando exclusivos de console para o PC, e o papel da IA nisso.</description>
     </item>
   </channel>

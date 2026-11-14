@@ -126,6 +126,12 @@ body {
     white-space: nowrap;
 }
 
+/* célula com vários nomes de código (ex.: lista de funções) pode quebrar linha */
+.md-content table:not(.highlighttable, .highlight table) td:first-child:has(> code ~ code) {
+    white-space: normal;
+    min-width: 11em;
+}
+
 @media (max-width: 600px) {
     .md-content table:not(.highlighttable, .highlight table) {
         display: block;
@@ -145,6 +151,12 @@ body {
 
 [data-theme="dark"] .md-content img {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* imagem sozinha num parágrafo (o padrão do markdown) fica centralizada */
+.md-content p > img:only-child {
+    display: block;
+    margin-inline: auto;
 }
 
 .md-content figure > figcaption > p {
@@ -403,4 +415,55 @@ body {
     .cat-bg {
         display: none;
     }
+}
+
+/* ---------- Código inline colorido (opt-in: inlineCodeColors no front matter) ---------- */
+/* As classes ic-* são aplicadas pelo script em layouts/_partials/extend_footer.html. */
+:root {
+    --ic-api: #a8445a;
+    --ic-java: #4a58a8;
+    --ic-file: #8a6418;
+    --ic-net: #2f7350;
+}
+
+:root[data-theme="dark"] {
+    --ic-api: #e8a0ae;
+    --ic-java: #aab4ec;
+    --ic-file: #e0c48e;
+    --ic-net: #9bcfb1;
+}
+
+.post-content code.ic {
+    background: color-mix(in srgb, var(--ic-c) 11%, var(--code-bg));
+    color: var(--ic-c);
+}
+
+.post-content code.ic-api { --ic-c: var(--ic-api); }
+.post-content code.ic-java { --ic-c: var(--ic-java); }
+.post-content code.ic-file { --ic-c: var(--ic-file); }
+.post-content code.ic-net { --ic-c: var(--ic-net); }
+
+.post-content code.ic-hash {
+    --ic-c: var(--secondary);
+    word-break: break-all;
+}
+
+/* hash longo na primeira coluna de tabela pode quebrar em qualquer ponto */
+.md-content td:first-child code.ic-hash {
+    white-space: normal;
+}
+
+/* créditos pequenininhos embaixo dos memes */
+.md-content figure.meme img {
+    margin: 0 auto;
+}
+
+.md-content figure.meme > figcaption {
+    margin: 6px 0 20px;
+}
+
+.md-content figure.meme > figcaption > p {
+    font-size: 11px;
+    font-style: normal;
+    opacity: 0.8;
 }
